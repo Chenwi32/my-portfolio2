@@ -1,0 +1,213 @@
+
+body{
+    background-color: rgba(22, 21, 9, 0.89);
+             padding: 0;
+              margin: 0;
+}
+/*Header*/
+header{ 
+      flex-direction: column;
+         align-items: center;
+          text-align: center;
+           font-size: 1.2em;
+          background: url(images/bckgrd.png);
+ background-position: center; 
+     background-size: 100%;
+   background-repeat: no-repeat;
+    background-color: #838508d3;
+            position: relative;
+             padding: 1.5em 0 0 0;
+             display: flex;
+              margin: 0 0 1.8em 0;
+              height: 20em; 
+               width: 100%;   
+}
+
+header h1{
+    padding-top: 1.5em;
+      font-size: 1.5em;
+          color: rgb(241, 237, 167);
+}
+
+header p{
+   text-align: center;
+    font-size: 1.1em;
+        color: rgba(250, 223, 71, 0.993);
+}
+
+/*Navbar*/
+nav{
+    background-color: rgb(182, 44, 10);
+        justify-self: start;
+          text-align: center;
+            position: fixed;
+             z-index: 1;
+              margin: 0 0;
+              height: auto;
+               width: 100%;    
+}
+
+nav ul{
+    list-style-type: none;  
+            display: inline-flex;
+}
+
+nav ul a{
+    text-decoration: none;
+          font-size: 1.2em;
+             margin: 0.5em; 
+              color: rgb(252, 240, 240);  
+               font: large;
+}
+
+nav ul a:hover{
+    border-color: rgb(226, 230, 233);
+          border: solid;
+}
+
+/*Portfolio*/
+.portfolio{
+  flex-direction: column;
+      text-align: center;
+         display: flex;
+          height: 100%;
+           width: 100%;
+           color: white;   
+}
+
+.portfolio img{
+    border-radius: 2px;
+     border-color: rgb(16, 16, 17);
+     border-width: 0.8em;
+           margin: 0.8em auto;
+            order: solid;
+           height: 100%;
+            width: 90%;
+}
+
+.portfolio-h1{
+    text-align: center;
+    margin-top: 1.5em;
+         color: rgb(241, 237, 167);
+}
+
+figure{
+    background-color: rgb(22, 22, 20);
+           font-size: large;
+             padding: 0.5em;
+}
+
+caption{
+    margin-top: 2.5em;
+}
+
+/*Footer*/
+
+
+footer{
+    background-color: rgba(20, 15, 15, 0.836);
+     justify-content: center;
+      flex-direction: column; 
+       margin-bottom: 0;
+       align-content: center;
+          text-align: center;
+             padding: 0.5em 0.8em;
+             display: flex;
+               color: white;
+}
+hr{
+    border-color: rgb(192, 4, 4);
+           width: 100%;
+}
+footer a{
+    text-decoration: none;
+          font-size: 1.1em;
+            
+            padding: 0.2em;
+             margin: 0.2em;
+              color: rgb(240, 215, 215);
+}
+
+footer a:hover{
+        color: rgb(224, 195, 98);
+}
+
+
+#contact{
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5em 0;
+} footer h2{
+    margin: 0.5em 0.5em 0 0.5em ;
+}
+
+/*Media Query*/
+
+@media (min-width: 700px){
+
+ /*Header MediaQ*/
+    header{ 
+         margin: auto;
+         height: 40em; 
+          width: 85%;   
+     }
+
+    header h1{
+        padding-top: 2.5em;
+          font-size: 2.5em;
+              color: rgb(241, 237, 167);
+     }
+
+    header p{
+         font-size: 1.9em;
+     }
+ /*Portfolio MediaQ*/
+
+ .portfolio{
+     grid-template: repeat(1, 1fr)/ repeat(2, 1fr) ;
+           display: grid;
+            margin: auto;
+            height: 100%;
+             width: 85%;
+             color: white;   
+  }
+
+  .portfolio img{
+    border-radius: 2px;
+     border-color: rgb(16, 16, 17);
+           margin: 0;
+           height: 85%;
+            width: 90%;
+}
+
+figure{
+    background-color: rgb(22, 22, 20);
+           font-size: 1.5em;
+             padding: 0.9em 0 0;
+             margin: 0.5rem;
+}
+
+
+.portfolio-h1{
+    text-align: center;
+    margin-top: 1.5em;
+     font-size: 2.5em;
+         color: rgb(241, 237, 167);
+}
+
+/*Footer MediaQ*/
+footer a{
+          font-size: 1.5em;
+             margin: 0.5em 0.8em;
+}
+
+
+
+/*Navbar MediaQ*/
+nav ul a{
+          font-size: 1.5em;
+           
+
+}
+
+}
