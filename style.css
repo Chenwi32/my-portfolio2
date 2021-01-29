@@ -38,13 +38,19 @@ header p{
 /*Navbar*/
 nav{
     background-color: rgb(182, 44, 10);
+    justify-content: space-between;
         justify-self: start;
           text-align: center;
             position: fixed;
+            display: flex;
              z-index: 1;
               margin: 0 0;
               height: auto;
                width: 100%;    
+}
+
+nav img{
+    padding: 0.3em;
 }
 
 nav ul{
