@@ -3,89 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8123d5ac40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Eugene's Portfolio</title>
 </head>
 <body>
 
-    <!--Navbar-->
-    <nav>
-        <img src="images/logo.png" width="85px" height="55px" alt="">
-        <ul>
-            <li><a href="">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!------Navbar----->
+    <div class="nav-bar">
+        <div class="container flex">
+            <a href="index.html"><img src="images/./logos/logo.png" alt="EC logo"></a>
+            <nav>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html" class="active">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+        </div>
+    </div>
+
 
     <!--Header-->
-    <header id="welcome-section">
-     <div class="overlay" style="background-image: url(images/bckgrd.png);"> </div>
-      <h1>Hey! I am Chenwi Eugene</h1>
-      <p>A junior web developer and 
-        <br> Graphic designer</p>
+    <header class="head" id="welcome-section">
+        <div class="container">
+            <div class="header-text">
+                <h1>Hey! I am Chenwi Eugene</h1>
+                <p>A junior Frontend developer.</p>
+            </div>
+            <div class="card card-img">
+                <img src="./images/bckgrd.png" alt="">
+            </div>
+        </div>
     </header>
 
     <!--Portfolio-->
-     <h1 class="portfolio-h1">These are some of my projects</h1>   
-    <div class="portfolio" id="portfolio">
-        
-        <figure>
-            <a href="https://phonobeats.netlify.app/" target="blank"><img src="images/phono-img.png" alt="" width="100%"></a>
-           <br> <caption>Pohno Beats product landing page</caption>
-        </figure> 
-        <figure>
-            <a href="https://survey-form-chenwi32.netlify.app/" target="blank"><img src="images/survey-img.png" alt="" width="100%"></a>
-           <br> <caption>A sample survey page</caption>
-        </figure>
-        <figure>
-            <a href="https://codepen.io/chenwi32/full/mdrZgeY" target="blank"><img src="images/codepen.png" alt="" width="100%"></a>
-           <br> <caption>A sample text-only page</caption>
-        </figure>
-        <figure>
-            <a href="https://respondsive-drop-down-menu.netlify.app/" target="blank"><img src="images/dropDown.png" alt="" width="100%"></a>
-           <br> <caption>A sample of a responsive drop-down menu page</caption>
-        </figure>
-    </div>
+     <section>
+        <div class="portfolio container ">
+            <div class="titles1"><h1>These are some of my projects</h1></div>  
+            <div class="portfolio-items grid" id="portfolio">
+                <figure class="card ">
+                    <a href="https://mafriculture.netlify.app/" target="blank"><img src="images/MAfriculture.png" alt="" width="100%"></a>
+                <br> <p>MAfriculture Project</p>
+                </figure> 
+                <figure class="card ">
+                    <a href="https://chenwi32loruki.netlify.app/" target="blank"><img src="images/Loruki.png" alt="" width="100%"></a>
+                <br> <p>Loruki Sample Cloud Hosting Site</p>
+                </figure>         
+               
+                <figure class="card ">
+                    <a href="https://phonobeats.netlify.app/" target="blank"><img src="images/phono-img.png" alt="" width="100%"></a>
+                <br> <p>Pohno Beats product landing page</p>
+                </figure> 
+                <figure class="card ">
+                    <a href="https://survey-form-chenwi32.netlify.app/" target="blank"><img src="images/survey-img.png" alt="" width="100%"></a>
+                <br> <p>A sample survey page</p>
+                </figure>
+                <figure class="card ">
+                    <a href="https://codepen.io/chenwi32/full/mdrZgeY" target="blank"><img src="images/codepen.png" alt="" width="100%"></a>
+                <br> <p>A sample text-only page</p>
+                </figure>
+                <figure class="card ">
+                    <a href="https://respondsive-drop-down-menu.netlify.app/" target="blank"><img src="images/dropDown.png" alt="" width="100%"></a>
+                <br> <p>A sample of a responsive drop-down menu page</p>
+                </figure>
+             </div>
+        </div>
+    </section> 
+<hr>
+
+     <!-- Skills -->
+     <section>
+        <div class="container skills">
+            <div class="titles"><h1 class="md text-center my-2">Skills</h1></div>
+            <div class="skills-container flex">
+                <div class="card">
+                    <h4>Node.js</h4>
+                    <img src="./images/./logos/node.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>Javascript</h4>
+                    <img src="./images/./logos/js.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>HTML5</h4>
+                    <img src="./images/./logos/html.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>CSS</h4>
+                    <img src="./images/./logos/css.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>REACT</h4>
+                    <img src="./images/./logos/react2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--Footer-->
     <footer>
-         <h2>Let's make it come to Life!</h2><br>
-        <div id="contact" class="contact">
-           
-            <a href="https://web.facebook.com/profile.php?id=100009608373380"> 
-                <i class="fab fa-facebook fa-2x"></i>
-                Facebook
-            </a>
-            <a href="http://instagram.com" class="insta">
-                <i class="fab fa-instagram fa-2x"></i>
-                instagram
-            </a>
-            <a href="https://twitter.com/ChenwiEugene">
-                <i class="fab fa-twitter fa-2x"></i>
-                Twitter
-            </a>
-            <a href="tel:+237651395832">
-                <i class="fa fa-phone fa-2x" ></i>
-                Call me
-            </a>
-            <a href="mailto:chenwieugene.j@gmail.com">
-                <i class="fa fa-at fa-2x"></i>
-                Write me
-            </a>
-              <a href="https://github.com/Chenwi32">
-                <i class="fab fa-github fa-2x"></i>
-                gitHub
-            </a>
-             
-        </div>
+        <div class="container">
+            <h2>Let's make it come to Life!</h2><br>
+            <div id="contact" class="contact">
+            
+                <a href="https://web.facebook.com/profile.php?id=100009608373380"> 
+                    <i class="fab fa-facebook fa-2x"></i>
+                    Facebook
+                </a>
+                <a href="http://instagram.com" class="insta">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    instagram
+                </a>
+                <a href="https://twitter.com/ChenwiEugene">
+                    <i class="fab fa-twitter fa-2x"></i>
+                    Twitter
+                </a>
+                <a href="tel:+237651395832">
+                    <i class="fa fa-phone fa-2x" ></i>
+                    Call me
+                </a>
+                <a href="mailto:chenwieugene.j@gmail.com">
+                    <i class="fa fa-at fa-2x"></i>
+                    Write me
+                </a>
+                <a href="https://github.com/Chenwi32">
+                    <i class="fab fa-github fa-2x"></i>
+                    gitHub
+                </a>
+                
+            </div>
 
-         <hr> 
+            <hr> 
 
-             <p> &copy; Copyright 2021 Chenwi Eugene  |  All rights reserved.</p>  
+                <p> &copy; Copyright 2021 Chenwi Eugene  |  All rights reserved.</p>
+        </div>  
     </footer>
        
 </body>

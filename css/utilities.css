@@ -1,0 +1,93 @@
+.container{
+    max-width: 1000px;
+    margin: auto;
+    overflow: auto;
+    padding: 0.8em;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.7);
+    margin: 1.5em;
+    color: #333;
+}
+
+.btn{
+   display: inline-block;
+   padding: 0.5em 1.2em;
+   cursor: pointer;
+   background-color: var(--primary);
+   color: white;
+   border-radius: 10px;
+   transition: 0.2s;
+   outline: none;
+   text-decoration: none;
+}
+
+.btn:hover{
+    transform: scale(0.98);
+}
+
+.btn-outline{
+    text-decoration: none;
+    border: solid white;
+}
+
+.btn-dark{
+    background-color: var(--dark-color);
+}
+
+
+.titles1::after{
+    content: "";
+     height: 3px; 
+      width: 500px; 
+     bottom: 30px; 
+      right: 0;
+      left: 0;
+      border-radius: 33%;
+      position: absolute;
+    background-color: var(--secondary-color);
+    margin: 1.5em auto;
+}
+
+.titles::after{
+    content: "";
+     height: 2px; 
+      width: 30%; 
+     bottom: 9px;
+      right: 0;
+      left: 0;
+      border-radius: 33%;
+      position: absolute;
+    background-color: var(--secondary-color);
+    margin: 1.5em auto;
+}
+
