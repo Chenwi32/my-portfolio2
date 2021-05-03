@@ -5,6 +5,12 @@
     --suplimentary-color: #6A9A8B;
 }
 
+*{
+    box-sizing: border-box;
+       padding: 0;
+        margin: 0;
+}
+
 .titles{
     position: relative;
 }
@@ -14,13 +20,8 @@
     width: 100%;
 }
 
-*{
-    box-sizing: border-box;
-       padding: 0;
-        margin: 0;
-}
 img{
-    width: 90px;
+    width: 100%;
 }
 
 hr{
@@ -56,9 +57,10 @@ body{
     
 }
 
-.nav-bar .container>img{
-            width: 80px;
-            height: 45px;
+.nav-bar .container img{
+    min-width: 35px;
+    width: 40%;
+    margin: 0;
 }
 
 nav ul{
@@ -81,7 +83,7 @@ nav ul li a{
 nav ul li a:hover{
      border-color: var(--primary-color);
     border-bottom: solid var(--primary-color);
-    color: var(--primary-color);
+            color: var(--primary-color);
 }
 /*-----Header-----*/
 .head{ 
@@ -112,8 +114,6 @@ nav ul li a:hover{
     margin-top: 4.5em;
     justify-self: flex-end;
     background-color: var(--suplimentary-color);
-    /* transform: skewY(3deg); */
-    transform: skewY(2.5deg);
     position: relative;
 }
 
@@ -124,16 +124,16 @@ nav ul li a:hover{
 }
 .head::before,
 .head::after{
-    content: "";
-     height: 90px; 
-      width: 100%; 
-      bottom: -80px;
-      right: 0;
-      left: 0;
-      border-radius: 33%;
-      position: absolute;
- background-color: var(--primary-color);
- transform: skewY(3deg);
+        content: "";
+        height: 90px; 
+        width: 100%; 
+        bottom: -80px;
+        right: 0;
+        left: 0;
+        border-radius: 33%;
+        position: absolute;
+    background-color: var(--primary-color);
+    transform: skewY(3deg);
 }
 
 header h1{
@@ -150,18 +150,18 @@ header p{
         margin-bottom: 5em;
 }
 
-.overlay{
-        background-position: center; 
-        background-repeat: no-repeat;  
-          background-size: cover;
-         height: 100%;
-         width: 100%;
-         position: absolute;
-         z-index: -1;
-         filter: brightness(40%);
+/*-----Portfolio-----*/
+
+#portfolio{
+    width: 90%;
+    margin: auto;
 }
 
-/*-----Portfolio-----*/
+#portfolio .container{
+    width: 100%;
+    margin: auto;
+    padding: 0.2em;
+}
 
 .portfolio {
             display: flex;
@@ -169,14 +169,21 @@ header p{
     justify-content: center;
         align-items: center;
       align-content: center;
-/*          margin-top: ;
+   /*    margin-top: ;
       margin-bottom: ;  */
-             margin: 4em auto 5em;
+             margin: 4em auto 0;
 }
-
 
 .portfolio-items{
     margin-top: 3em;
+}
+
+.more-portfolio .portfolio {
+             margin: 4em auto 3em;
+}
+
+.more-portfolio .portfolio-items{
+    margin-top: 4em;
 }
 
  .portfolio .card{
@@ -185,9 +192,9 @@ header p{
      justify-content: center;
          align-items: center;
              display: flex;
-               width: 70%;
+               width: 98%;
               height: 100%;
-              margin: 0.5em;
+              margin: auto;
 }
  .portfolio .card img{
      width: 100px;
@@ -202,7 +209,7 @@ header p{
 } 
 
 
-.portfolio h1{
+#portfolio-sc .portfolio h1{
        text-align: center;
        margin-top: 2.5em;
     margin-bottom: 0.8em;
@@ -211,10 +218,29 @@ header p{
 
 
 figure{
-      font-size: large;
-        padding: 0.5em;
+    font-size: large;
+      padding: 0.5em;
 }
 
+.see-moreBtn{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 580;
+    padding: 1.5em;
+    transition: 0.2s;
+}
+
+.see-moreBtn:hover{
+    transform: scale(1.008);
+}
+
+.more-portfolio{
+    display: none;
+}
 
 /* ------Skills------ */
 
@@ -231,6 +257,7 @@ figure{
 
 .skills .card{
     transition: 0.3s;
+    width: 150px;
 }
 
 .skills .card:hover{
@@ -328,9 +355,11 @@ footer h2{
 }
 
 /*--------Media Query-------*/
+
+
 @media (min-width: 755px){
 
- /*--Header MediaQ---*/
+    /*--Header MediaQ---*/
 
     header h1{
         padding-top: 2.5em;
@@ -341,60 +370,72 @@ footer h2{
          font-size: 1.9em;
      }
 
- /*-----Portfolio MediaQ-----*/
+     .head .card{ 
+        transform: skewY(2.5deg);
+    }
+
+    /*-----Portfolio MediaQ-----*/
 
 
-  .portfolio img{
+   .portfolio img{
     border-radius: 2px;
            margin: 0;
            height: 78%;
             width: 90%;
-}
+    }
 
-figure{
+    .portfolio .card{
+               width: 95%;
+              height: 89%;
+              margin: 1.5em;
+    }
+
+    figure{
            font-size: 1.1em;
              padding: 0.5em 0 .5em;
-             margin: 0.5rem 0.5rem 0.5rem 0;
              height: 88%;
              text-align: center;
-}
+    }
 
+    .portfolio .grid{
+        grid-template-columns: repeat(3, 1fr);
+                    gap: 0.5em;
+    }
 
-/*------Footer MediaQ------*/
-footer a{
+    /*------Footer MediaQ------*/
+    footer a{
           font-size: 1.1em;
              margin: 0.5em 0.3em;
              padding: 0.5em 0.3em;
-}
-.contact{
+    }
+    .contact{
     flex-direction: row;
     width: 80%;
     margin: auto;
-}
+    }
 
-/*---------Skills Styling Media Q--------*/
-.skills .flex{
+    /*---------Skills Styling Media Q--------*/
+    .skills .flex{
     width: fit-content;
     flex-wrap: wrap;
     justify-content: center;
-}
+    }
 
-.skills .flex .card{
+    .skills .flex .card{
     margin: .5em;
-}
+    }
 
 
 
-/*--------Navbar MediaQ-----*/
-nav ul a{
+    /*--------Navbar MediaQ-----*/
+    nav ul a{
     font-size: 1.5em;
-}
+    }
 
-.titles1::after{
+    .titles1::after{
     content: "";
      height: 3px; 
       width: 90%; 
-     bottom: 20; 
       right: 0;
       left: 0;
       border-radius: 33%;
@@ -402,8 +443,9 @@ nav ul a{
     background-color: var(--secondary-color);
     margin: 1.5em auto;
     }
-
 }
+
+
 @media (min-width: 550px) and (max-width: 755px){
 
  /*--Header MediaQ---*/
@@ -435,7 +477,6 @@ nav ul a{
         margin-top: 6.5em;
         justify-self: flex-end;
         background-color: var(--suplimentary-color);
-        transform: skewY(2.5deg);
         z-index: -10;
         position: absolute;
     }
@@ -458,6 +499,7 @@ nav ul a{
              text-align: center;
     }
 
+
     /*--------Skills Styling Media Q------*/
 
     .skills .flex{
@@ -466,13 +508,22 @@ nav ul a{
     }
 
     /*------Footer MediaQ------*/
+    footer{
+        width: 100%;
+    }
+    
+    footer .container{
+        width: 100%;
+    }
+
     footer a{
-          font-size: 1.1em;
-             margin: 0.5em 0.5em;
+          font-size: 1em;
+             margin: 0.5em 0.3em;
              padding: 0.5em;
     }
+    
     .contact{
-            flex-wrap: wrap-reverse;
+            flex-wrap: wrap;
        flex-direction: row; 
                 width: 90%;
                margin: auto;
@@ -498,7 +549,7 @@ nav ul a{
 
 }
 
-@media (min-width: 450px) and (max-width: 550px){
+@media (min-width: 450px) and (max-width: 560px){
 
  /*--Header MediaQ---*/
 
@@ -524,15 +575,12 @@ nav ul a{
     }
 
     .head .card{ 
-        height: 75%; 
-        width: 80%;
         margin-top: 4.5em;
         justify-self: flex-end;
         background-color: var(--suplimentary-color);
-        transform: skewY(2.5deg);
         z-index: -10;
         position: absolute;
-    }
+    } 
 
     .titles1::after{
     content: "";
@@ -553,18 +601,25 @@ nav ul a{
         width: fit-content;
         flex-wrap: wrap;
         justify-content: center;
-    }
+    } 
 
     .skills .flex .card{
-        margin: .5em;
-    }
+        margin: 0.5em;
+    } 
 
 
 }
 
 
-@media  (max-width: 450px){
+@media  (max-width: 480px){
 
+   /*------Navbar MediaQ------*/
+
+   nav ul li a{
+        font-size: 0.8em;
+          padding: .3em;
+           margin: .2em;  
+    }
     /*-----Header MediaQ-----*/
 
     .head .container{ 
@@ -579,16 +634,15 @@ nav ul a{
      flex-direction: column;   
     }
 
-    .head .card{ 
-        height: 75%; 
-        width: 80%;
+     .head .card{ 
         margin-top: 4.7em;
         justify-self: flex-end;
         background-color: var(--suplimentary-color);
-        transform: skewY(2.5deg);
         z-index: -10;
         position: absolute;
-    }
+        height: 70%;
+        width: 80%;
+    } 
    
        header h1{
            padding-top: 3.5em;
@@ -601,17 +655,38 @@ nav ul a{
 
     /*----Portfolio MediaQ-----*/
    
-     .portfolio img{
+    /*     .portfolio img{
        border-radius: 2px;
               margin: 0;
               height: 85%;
                width: 90%;
-   }
-   
+   } */
+
+   .portfolio {
+        margin: auto;
+    }
+
+   .portfolio .grid{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* margin-top: ;
+    margin-bottom: ;  */
+        margin: auto;
+    }
+    
+    .portfolio-items{
+        margin-top: 1em;
+    }
+
+    .more-portfolio .portfolio-items{
+        margin-top: 0;
+    }
+
    figure{
            font-size: 0.9em;
              padding: 0.5em 0.2em .5em;
-             margin: 0.5rem 0.5rem 0.5rem 0;
              height: 85%;
              text-align: center;
     }
@@ -629,37 +704,27 @@ nav ul a{
                 padding: 0.5em;
    }
    .contact{
-             flex-wrap: wrap;
-        flex-direction: row;
-                 width: 60%;
-                margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+         width: 60%;
+         margin: auto;
     }
    
-   /*------Navbar MediaQ------*/
 
-   .nav-bar .container img{
-    width: 50px;
-    }
-
-   nav ul li a{
-          font-size: 0.8em;
-            padding: .3em;
-             margin: .2em;  
-    }
 
    /*---------About Styling media Q---------*/
 
    .titles1::after{
-    content: "";
-     height: 3px; 
-      width: 90%; 
-     bottom: 45%; 
-      right: 0;
-      left: 0;
-      border-radius: 33%;
-      position: absolute;
-    background-color: var(--secondary-color);
-    margin: 1.5em auto;
+        content: "";
+        height: 3px; 
+        width: 90%; 
+        bottom: 45%; 
+        right: 0;
+        left: 0;
+        border-radius: 33%;
+        position: absolute;
+        background-color: var(--secondary-color);
+        margin: 1.5em auto;
     }
 
     .skills .flex{
@@ -688,29 +753,38 @@ nav ul a{
     }
    
 }
+
+
 @media  (max-width: 396px){
 
    .titles1::after{
-    content: "";
-     height: 3px; 
-      width: 90%; 
-     bottom: 90px; 
-      right: 0;
-      left: 0;
-      border-radius: 33%;
-      position: absolute;
-    background-color: var(--secondary-color);
-    margin: 1.5em auto;
+        content: "";
+        height: 3px; 
+        width: 90%; 
+        bottom: 55%; 
+        right: 0;
+        left: 0;
+        border-radius: 33%;
+        position: absolute;
+        background-color: var(--secondary-color);
+        margin: 1.8em auto;
     }
 
-    .nav-bar .container img{
-        width: 40px;
-        }
+    nav ul{
+                margin: .5em 0;
+                padding-right: 0;
+    }
+
+    .nav-bar .container{
+                margin: 0;
+                padding: 0.3em 0;
+    }
+   
     
-       nav ul li a{
-              font-size: 0.7em;
-                padding: .3em;
-                 margin: .2em;  
-        }
+    nav ul li a{
+        font-size: 0.7em;
+        padding: .3em;
+        margin: 0.1em; 
+    }
 
 }

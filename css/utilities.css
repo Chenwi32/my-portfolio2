@@ -15,7 +15,7 @@
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5em;
+    grid-gap: 1.2em;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -35,7 +35,7 @@
     border-radius: 10px;
     padding: 1.5em;
     box-shadow: 0 3px 10px rgb(0, 0, 0, 0.7);
-    margin: 1.5em;
+    margin: 1.1em;
     color: #333;
 }
 
@@ -68,8 +68,8 @@
 .titles1::after{
     content: "";
      height: 3px; 
-      width: 500px; 
-     bottom: 30px; 
+      width: 100%; 
+     bottom: 50%; 
       right: 0;
       left: 0;
       border-radius: 33%;
