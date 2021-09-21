@@ -1,790 +1,818 @@
-:root{
-    --primary-color: #FFFFFF;
-    --secondary-color: #00754B; 
-    --light-color: #C8FCEA;
-    --suplimentary-color: #6A9A8B;
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #00754b;
+  --light-color: #c8fcea;
+  --suplimentary-color: #6a9a8b;
 }
 
-*{
-    box-sizing: border-box;
-       padding: 0;
-        margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.titles{
-    position: relative;
+.titles {
+  position: relative;
 }
 
-.titles1{
-    position: relative;
-    width: 100%;
+.titles1 {
+  position: relative;
+  width: 100%;
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 
-hr{
-    width: 90%;
-    margin: 1.5em auto;
-    height: 2px;
-    background-color: black;
-    border: none;
+hr {
+  width: 90%;
+  margin: 1.5em auto;
+  height: 2px;
+  background-color: black;
+  border: none;
 }
 
-body{
-    background-color: var(--primary-color);
-    font-size: 1.1em;
-    font-family: Verdana, sans-serif;
+body {
+  background-color: var(--primary-color);
+  font-size: 1.1em;
+  font-family: Verdana, sans-serif;
 }
 
 /*---------Navbar-------*/
 .nav-bar {
-    background-color: var(--secondary-color);
-            position: fixed;
-               width: 100%;
-             z-index: 100;
-          box-shadow: 0 5px 5px rgb(0, 0, 0, 0.3);
+  background-color: var(--secondary-color);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 5px 5px rgb(0, 0, 0, 0.3);
 }
 
-.nav-bar .container{
-            display: flex;
-    justify-content: space-between;
-        align-items: center;
-         text-align: center;
-              width: 100%;
-             height: 100%;
-    
+.nav-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
-.nav-bar .container img{
-    min-width: 35px;
-    width: 40%;
-    margin: 0;
+.nav-bar .container img {
+  min-width: 35px;
+  width: 40%;
+  margin: 0;
 }
 
-nav ul{
-    list-style-type: none;  
-            display: inline-flex;
-            margin: .5em auto;
-            padding-right: 0.3em;
+nav ul {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 0.5em auto;
+  padding-right: 0.3em;
 }
 
-nav ul li a{
-    text-decoration: none;
-          font-size: 1.2em;
-            padding: .3em;
-             margin: .5em; 
-              color: rgb(216, 209, 209);
-         transition: 0.5s;   
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 0.3em;
+  margin: 0.5em;
+  color: rgb(216, 209, 209);
+  transition: 0.5s;
 }
 
 .active,
-nav ul li a:hover{
-     border-color: var(--primary-color);
-    border-bottom: solid var(--primary-color);
-            color: var(--primary-color);
+nav ul li a:hover {
+  border-color: var(--primary-color);
+  border-bottom: solid var(--primary-color);
+  color: var(--primary-color);
 }
 /*-----Header-----*/
-.head{ 
-    background-color: var(--secondary-color);
-       border-radius: 10px;
-            position: relative;
-         align-items: center;
-          text-align: center;
-              height: fit-content; 
-               width: 100%; 
-             z-index: -100;
+.head {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  width: 100%;
+  z-index: -100;
 }
 
-.head .container{ 
-         align-items: center;
-          text-align: center;
-           font-size: 1.2em;       
-            position: relative;
-             display: flex;
-              height: auto; 
-               width: 100%;
-     justify-content: center;  
+.head .container {
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+  position: relative;
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
 }
 
-.head .card{ 
-    height: 450px; 
-    width: 70%;
-    margin-top: 4.5em;
-    justify-self: flex-end;
-    background-color: var(--suplimentary-color);
-    position: relative;
+.head .card {
+  height: 450px;
+  width: 70%;
+  margin-top: 4.5em;
+  justify-self: flex-end;
+  background-color: var(--suplimentary-color);
+  position: relative;
 }
 
-
-.head .card img{ 
-              height: 100%; 
-               width: 100%; 
+.head .card img {
+  height: 100%;
+  width: 100%;
 }
 .head::before,
-.head::after{
-        content: "";
-        height: 90px; 
-        width: 100%; 
-        bottom: -80px;
-        right: 0;
-        left: 0;
-        border-radius: 33%;
-        position: absolute;
-    background-color: var(--primary-color);
-    transform: skewY(3deg);
+.head::after {
+  content: "";
+  height: 90px;
+  width: 100%;
+  bottom: -80px;
+  right: 0;
+  left: 0;
+  border-radius: 33%;
+  position: absolute;
+  background-color: var(--primary-color);
+  transform: skewY(3deg);
 }
 
-header h1{
-    padding-top: .5em;
-      font-size: 1.5em;
-        color: var(--primary-color);
-         margin-bottom: 0.5em; 
+header h1 {
+  padding-top: 0.5em;
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
 }
 
-header p{
-   text-align: center;
-    font-size: 1.1em;
-        color: var(--primary-color);
-        margin-bottom: 5em;
+header p {
+  text-align: center;
+  font-size: 1.1em;
+  color: var(--primary-color);
+  margin-bottom: 5em;
 }
 
 /*-----Portfolio-----*/
 
-#portfolio{
-    width: 90%;
-    margin: auto;
+#portfolio {
+  width: 90%;
+  margin: auto;
 }
 
-#portfolio .container{
-    width: 100%;
-    margin: auto;
-    padding: 0.2em;
+#portfolio .container {
+  width: 100%;
+  margin: auto;
+  padding: 0.2em;
 }
 
 .portfolio {
-            display: flex;
-     flex-direction: column;
-    justify-content: center;
-        align-items: center;
-      align-content: center;
-   /*    margin-top: ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /*    margin-top: ;
       margin-bottom: ;  */
-             margin: 4em auto 0;
+  margin: 4em auto 0;
 }
 
-.portfolio-items{
-    margin-top: 3em;
+.portfolio-items {
+  margin-top: 3em;
 }
 
 .more-portfolio .portfolio {
-             margin: 4em auto 3em;
+  margin: 4em auto 3em;
 }
 
-.more-portfolio .portfolio-items{
-    margin-top: 4em;
+.more-portfolio .portfolio-items {
+  margin-top: 4em;
 }
 
- .portfolio .card{
-    background-color: var(--primary-color);
-      flex-direction: column;
-     justify-content: center;
-         align-items: center;
-             display: flex;
-               width: 98%;
-              height: 100%;
-              margin: auto;
+.portfolio .card {
+  background-color: var(--primary-color);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 98%;
+  height: 100%;
+  margin: auto;
 }
- .portfolio .card img{
-     width: 100px;
-    height: 100px;
-    margin: auto;
+.portfolio .card img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
 }
- .portfolio .grid{
-    justify-content: center;
-        align-items: center;
-                gap: 1.5em;
-             margin: auto;
-} 
-
-
-#portfolio-sc .portfolio h1{
-       text-align: center;
-       margin-top: 2.5em;
-    margin-bottom: 0.8em;
-            color: var(--secondary-color);
+.portfolio .grid {
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  margin: auto;
 }
 
-
-figure{
-    font-size: large;
-      padding: 0.5em;
+#portfolio-sc .portfolio h1 {
+  text-align: center;
+  margin-top: 2.5em;
+  margin-bottom: 0.8em;
+  color: var(--secondary-color);
 }
 
-.see-moreBtn{
-    border: none;
-    outline: none;
-    background-color: inherit;
-    color: var(--secondary-color);
-    cursor: pointer;
-    font-size: 1.5em;
-    font-weight: 580;
-    padding: 1.5em;
-    transition: 0.2s;
+figure {
+  font-size: large;
+  padding: 0.5em;
 }
 
-.see-moreBtn:hover{
-    transform: scale(1.008);
+.see-moreBtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 580;
+  padding: 1.5em;
+  transition: 0.2s;
 }
 
-.more-portfolio{
-    display: none;
+.see-moreBtn:hover {
+  transform: scale(1.008);
+}
+
+.more-portfolio {
+  display: none;
 }
 
 /* ------Skills------ */
 
-.skills{
-    text-align: center;
-    margin-top: 2.5em;
+.skills {
+  text-align: center;
+  margin-top: 2.5em;
 }
 
-
-.skills h1{
-    color: var(--secondary-color);
-    margin-bottom: 0.8em;
+.skills h1 {
+  color: var(--secondary-color);
+  margin-bottom: 0.8em;
 }
 
-.skills .card{
-    transition: 0.3s;
-    width: 150px;
+.skills .card {
+  transition: 0.3s;
+  width: 150px;
 }
 
-.skills .card:hover{
-transform: translateY(-0.2em);
+.skills .card:hover {
+  transform: translateY(-0.2em);
 }
 
-.skills .card img{
-    width: 80px;
-    height: 50px;
+.skills .card img {
+  width: 80px;
+  height: 50px;
 }
 
-.skills .card h4{
-margin: 0.5em;
+.skills .card h4 {
+  margin: 0.5em;
 }
-
 
 /* ---------About Styling-------- */
 
 .about-me .container {
-    padding-top: 8em;
-    width: 100%;
-    flex-direction: column;
+  padding-top: 8em;
+  width: 100%;
+  flex-direction: column;
 }
 
-.about-me .container h1{
-    padding-top: 1em;
-     text-align: center;
-      font-size: 1.9em;
-          color: var(--secondary-color);
+.about-me .container h1 {
+  padding-top: 1em;
+  text-align: center;
+  font-size: 1.9em;
+  color: var(--secondary-color);
 }
 
-.about-me img{
-    width: 60%;
+.about-me img {
+  width: 60%;
 }
 
-.about-me-text{
-    width: 70%;
-    flex-direction: column;
+.about-me-text {
+  width: 70%;
+  flex-direction: column;
 }
 
-.about-me-text img{
-    width: 90%; 
-    margin: auto;
+.about-me-text img {
+  width: 90%;
+  margin: auto;
 }
-.about-me-text p{
-    line-height: 1.5em;
-    letter-spacing: 0.1em;
-    padding: 1.5em;
-    color:  var(--secondary-color);
+.about-me-text p {
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  padding: 1.5em;
+  color: var(--secondary-color);
 }
 .about-me-text figure {
-    color: rgb(105, 102, 102);
+  color: rgb(105, 102, 102);
 }
 
+/*/////////////// chat bot /////////////*/
+.chat__bot {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.ifr__header {
+  height: 20px;
+  width: 350px;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.7s;
+  color: #fff;
+}
+
+.bot {
+  position: absolute;
+}
+
+.slide {
+  opacity: 0;
+  display: none;
+}
+
+.fa-comment-dots {
+  font-size: 3.2em;
+  color: #00754b;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.fa-comment-dots:hover {
+  transform: translate3d(9px, -8px, -8px);
+}
+/*//////////////////////////////////////////////////*/
 
 /*------Footer------*/
-footer{
-    background-color: var(--suplimentary-color);
-     justify-content: center;
-      flex-direction: column; 
-          margin-top: 1.5em;
-       align-content: center;
-          text-align: center;
-             padding: 1.5em 0.8em;
-             display: flex;
-               color: white;
+footer {
+  background-color: var(--secondary-color);
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1.5em;
+  align-content: center;
+  padding: 0.5rem 0.8em;
+  display: flex;
+  color: white;
+  width: 100%;
 }
 
-footer a{
-    text-decoration: none;
-          font-size: 1.1em;
-        transition: 0.5s;    
-            padding: 0.2em;
-             margin: 0.2em;
-              color: rgb(216, 209, 209);
+footer .container {
+  width: 100%;
 }
 
-footer a:hover{
-        color: rgb(255, 255, 254);
-    transform: translateY(-0.2em);
+footer a {
+  text-decoration: none;
+  font-size: 0.5em;
+  transition: 0.5s;
+  padding: 0.2em 0.2em 0;
+  margin: 0 0.2em;
+  color: rgb(216, 209, 209);
 }
 
-footer hr{
-        background-color: rgb(255, 255, 254);
+footer a:hover {
+  color: rgb(255, 255, 254);
+  transform: translateY(-0.2em);
 }
 
-.contact{
-    display: flex;
-/*     flex-direction: column; */
-   width: 80%;
-    margin: auto;
-} 
-footer h2{
-    margin: 0.5em 0.5em 0 0.5em ;
+.contact {
+  display: flex;
+
+  margin-bottom: 0;
+  text-align: right;
+  align-items: flex-end;
+}
+
+footer h2 {
+  margin: 0.5rem;
+  text-align: left;
+}
+
+.footer__bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer__bottom p {
+  width: 100%;
 }
 
 /*--------Media Query-------*/
 
+@media (min-width: 755px) {
+  /*--Header MediaQ---*/
 
-@media (min-width: 755px){
+  header h1 {
+    padding-top: 2.5em;
+    font-size: 2.5em;
+  }
 
-    /*--Header MediaQ---*/
+  header p {
+    font-size: 1.9em;
+  }
 
-    header h1{
-        padding-top: 2.5em;
-          font-size: 2.5em;
-     }
+  .head .card {
+    transform: skewY(2.5deg);
+  }
 
-    header p{
-         font-size: 1.9em;
-     }
+  /*-----Portfolio MediaQ-----*/
 
-     .head .card{ 
-        transform: skewY(2.5deg);
-    }
-
-    /*-----Portfolio MediaQ-----*/
-
-
-   .portfolio img{
+  .portfolio img {
     border-radius: 2px;
-           margin: 0;
-           height: 78%;
-            width: 90%;
-    }
+    margin: 0;
+    height: 78%;
+    width: 90%;
+  }
 
-    .portfolio .card{
-               width: 95%;
-              height: 89%;
-              margin: 1.5em;
-    }
+  .portfolio .card {
+    width: 95%;
+    height: 89%;
+    margin: 1.5em;
+  }
 
-    figure{
-           font-size: 1.1em;
-             padding: 0.5em 0 .5em;
-             height: 88%;
-             text-align: center;
-    }
+  figure {
+    font-size: 1.1em;
+    padding: 0.5em 0 0.5em;
+    height: 88%;
+    text-align: center;
+  }
 
-    .portfolio .grid{
-        grid-template-columns: repeat(3, 1fr);
-                    gap: 0.5em;
-    }
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+  }
 
-    /*------Footer MediaQ------*/
-    footer a{
-          font-size: 1.1em;
-             margin: 0.5em 0.3em;
-             padding: 0.5em 0.3em;
-    }
-    .contact{
+  /*------Footer MediaQ------*/
+  footer a {
+    font-size: 1.1em;
+    margin: 0.5em 0.3em;
+    padding: 0.5em 0.3em;
+  }
+  .contact {
     flex-direction: row;
-    width: 80%;
     margin: auto;
-    }
+  }
 
-    /*---------Skills Styling Media Q--------*/
-    .skills .flex{
+  /*---------Skills Styling Media Q--------*/
+  .skills .flex {
     width: fit-content;
     flex-wrap: wrap;
     justify-content: center;
-    }
+  }
 
-    .skills .flex .card{
-    margin: .5em;
-    }
+  .skills .flex .card {
+    margin: 0.5em;
+  }
 
-
-
-    /*--------Navbar MediaQ-----*/
-    nav ul a{
+  /*--------Navbar MediaQ-----*/
+  nav ul a {
     font-size: 1.5em;
-    }
+  }
 
-    .titles1::after{
+  .titles1::after {
     content: "";
-     height: 3px; 
-      width: 90%; 
-      right: 0;
-      left: 0;
-      border-radius: 33%;
-      position: absolute;
+    height: 3px;
+    width: 90%;
+    right: 0;
+    left: 0;
+    border-radius: 33%;
+    position: absolute;
     background-color: var(--secondary-color);
     margin: 1.5em auto;
-    }
+  }
 }
 
+@media (min-width: 550px) and (max-width: 755px) {
+  /*--Header MediaQ---*/
 
-@media (min-width: 550px) and (max-width: 755px){
+  header h1 {
+    padding-top: 2.5em;
+    font-size: 2.1em;
+  }
 
- /*--Header MediaQ---*/
+  header p {
+    font-size: 1.5em;
+  }
 
-    header h1{
-        padding-top: 2.5em;
-          font-size: 2.1em;
-     }
-
-    header p{
-         font-size: 1.5em;
-     }
-
-    .head .container{ 
-        align-items: center;
-         text-align: center;
-          font-size: 1.2em;       
-           position: relative;
-            display: flex;
-             height: 700px; 
-              width: 100%;
+  .head .container {
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    position: relative;
+    display: flex;
+    height: 700px;
+    width: 100%;
     justify-content: center;
-     flex-direction: column;   
-    }
+    flex-direction: column;
+  }
 
-    .head .card{ 
-        height: 80%; 
-        width: 80%;
-        margin-top: 6.5em;
-        justify-self: flex-end;
-        background-color: var(--suplimentary-color);
-        z-index: -10;
-        position: absolute;
-    }
+  .head .card {
+    height: 80%;
+    width: 80%;
+    margin-top: 6.5em;
+    justify-self: flex-end;
+    background-color: var(--suplimentary-color);
+    z-index: -10;
+    position: absolute;
+  }
 
-    /*-----Portfolio MediaQ-----*/
+  /*-----Portfolio MediaQ-----*/
 
-
-  .portfolio img{
+  .portfolio img {
     border-radius: 2px;
-           margin: 0;
-           height: 78%;
-            width: 90%;
-    }
+    margin: 0;
+    height: 78%;
+    width: 90%;
+  }
 
-    figure{
-           font-size: 1.1em;
-             padding: 0.5em 0 .5em;
-             margin: 0.5rem 0.5rem 0.5rem 0;
-             height: 88%;
-             text-align: center;
-    }
+  figure {
+    font-size: 1.1em;
+    padding: 0.5em 0 0.5em;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    height: 88%;
+    text-align: center;
+  }
 
+  /*--------Skills Styling Media Q------*/
 
-    /*--------Skills Styling Media Q------*/
+  .skills .flex {
+    width: fit-content;
+    flex-wrap: wrap;
+  }
 
-    .skills .flex{
-        width: fit-content;
-        flex-wrap: wrap;
-    }
+  /*------Footer MediaQ------*/
+  footer {
+    width: 100%;
+  }
 
-    /*------Footer MediaQ------*/
-    footer{
-        width: 100%;
-    }
-    
-    footer .container{
-        width: 100%;
-    }
+  footer .container {
+    width: 100%;
+  }
 
-    footer a{
-          font-size: 1em;
-             margin: 0.5em 0.3em;
-             padding: 0.5em;
-    }
-    
-    .contact{
-            flex-wrap: wrap;
-       flex-direction: row; 
-                width: 90%;
-               margin: auto;
-    }
+  footer a {
+    font-size: 1em;
+    margin: 0.5em 0.3em;
+    padding: 0.5em;
+  }
 
-    /*--------Navbar MediaQ-----*/
-    nav ul a{
+  .contact {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  /*--------Navbar MediaQ-----*/
+  nav ul a {
     font-size: 1.5em;
-    }
+  }
 
-    .titles1::after{
+  .titles1::after {
     content: "";
-     height: 3px; 
-      width: 90%; 
-     bottom: 20; 
-      right: 0;
-      left: 0;
-      border-radius: 33%;
-      position: absolute;
+    height: 3px;
+    width: 90%;
+    bottom: 20;
+    right: 0;
+    left: 0;
+    border-radius: 33%;
+    position: absolute;
     background-color: var(--secondary-color);
     margin: 1.5em auto;
-    }
-
+  }
 }
 
-@media (min-width: 450px) and (max-width: 560px){
+@media (min-width: 450px) and (max-width: 560px) {
+  /*--Header MediaQ---*/
 
- /*--Header MediaQ---*/
+  header h1 {
+    padding-top: 1.9em;
+    font-size: 2.1em;
+  }
 
-    header h1{
-        padding-top: 1.9em;
-          font-size: 2.1em;
-     }
+  header p {
+    font-size: 1.1em;
+  }
 
-    header p{
-         font-size: 1.1em;
-     }
-
-    .head .container{ 
-        align-items: center;
-         text-align: center;
-          font-size: 1.2em;       
-           position: relative;
-            display: flex;
-             height: 700px; 
-              width: 100%;
+  .head .container {
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    position: relative;
+    display: flex;
+    height: 700px;
+    width: 100%;
     justify-content: center;
-     flex-direction: column;   
-    }
+    flex-direction: column;
+  }
 
-    .head .card{ 
-        margin-top: 4.5em;
-        justify-self: flex-end;
-        background-color: var(--suplimentary-color);
-        z-index: -10;
-        position: absolute;
-    } 
+  .head .card {
+    margin-top: 4.5em;
+    justify-self: flex-end;
+    background-color: var(--suplimentary-color);
+    z-index: -10;
+    position: absolute;
+  }
 
-    .titles1::after{
+  .titles1::after {
     content: "";
-     height: 3px; 
-      width: 90%; 
-     bottom: 20; 
-      right: 0;
-      left: 0;
-      border-radius: 33%;
-      position: absolute;
+    height: 3px;
+    width: 90%;
+    bottom: 20;
+    right: 0;
+    left: 0;
+    border-radius: 33%;
+    position: absolute;
     background-color: var(--secondary-color);
     margin: 1.5em auto;
-    }
+  }
 
-    /*--------Skills Styling Media Q------*/
+  /*--------Skills Styling Media Q------*/
 
-    .skills .flex{
-        width: fit-content;
-        flex-wrap: wrap;
-        justify-content: center;
-    } 
+  .skills .flex {
+    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .skills .flex .card{
-        margin: 0.5em;
-    } 
+  .skills .flex .card {
+    margin: 0.5em;
+  }
 
+  .footer__bottom {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+  }
 
+  .footer__bottom p {
+    -ms-flex-order: 1;
+  }
 }
 
+@media (max-width: 480px) {
+  /*------Navbar MediaQ------*/
 
-@media  (max-width: 480px){
+  nav ul li a {
+    font-size: 0.8em;
+    padding: 0.3em;
+    margin: 0.2em;
+  }
+  /*-----Header MediaQ-----*/
 
-   /*------Navbar MediaQ------*/
-
-   nav ul li a{
-        font-size: 0.8em;
-          padding: .3em;
-           margin: .2em;  
-    }
-    /*-----Header MediaQ-----*/
-
-    .head .container{ 
-        align-items: center;
-         text-align: center;
-          font-size: 1.2em;       
-           position: relative;
-            display: flex;
-             height: 500px; 
-              width: 100%;
+  .head .container {
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    position: relative;
+    display: flex;
+    height: 500px;
+    width: 100%;
     justify-content: center;
-     flex-direction: column;   
-    }
+    flex-direction: column;
+  }
 
-     .head .card{ 
-        margin-top: 4.7em;
-        justify-self: flex-end;
-        background-color: var(--suplimentary-color);
-        z-index: -10;
-        position: absolute;
-        height: 70%;
-        width: 80%;
-    } 
-   
-       header h1{
-           padding-top: 3.5em;
-             font-size: 1.5em;
-        }
-   
-       header p{
-            font-size: 1.1em;
-        }
+  .head .card {
+    margin-top: 4.7em;
+    justify-self: flex-end;
+    background-color: var(--suplimentary-color);
+    z-index: -10;
+    position: absolute;
+    height: 70%;
+    width: 80%;
+  }
 
-    /*----Portfolio MediaQ-----*/
-   
-    /*     .portfolio img{
+  header h1 {
+    padding-top: 3.5em;
+    font-size: 1.5em;
+  }
+
+  header p {
+    font-size: 1.1em;
+  }
+
+  /*----Portfolio MediaQ-----*/
+
+  /*     .portfolio img{
        border-radius: 2px;
               margin: 0;
               height: 85%;
                width: 90%;
    } */
 
-   .portfolio {
-        margin: auto;
-    }
+  .portfolio {
+    margin: auto;
+  }
 
-   .portfolio .grid{
+  .portfolio .grid {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     align-content: center;
     /* margin-top: ;
     margin-bottom: ;  */
-        margin: auto;
-    }
-    
-    .portfolio-items{
-        margin-top: 1em;
-    }
+    margin: auto;
+  }
 
-    .more-portfolio .portfolio-items{
-        margin-top: 0;
-    }
+  .portfolio-items {
+    margin-top: 1em;
+  }
 
-   figure{
-           font-size: 0.9em;
-             padding: 0.5em 0.2em .5em;
-             height: 85%;
-             text-align: center;
-    }
-    .portfolio img{
+  .more-portfolio .portfolio-items {
+    margin-top: 0;
+  }
+
+  figure {
+    font-size: 0.9em;
+    padding: 0.5em 0.2em 0.5em;
+    height: 85%;
+    text-align: center;
+  }
+  .portfolio img {
     border-radius: 2px;
-           margin: 0;
-           height: 75%;
-            width: 90%;
-    }
-   
-   /*-----Footer MediaQ-------*/
-   footer a{
-             font-size: 1.2em;
-                margin: 0.5em 0.5em;
-                padding: 0.5em;
-   }
-   .contact{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-         width: 60%;
-         margin: auto;
-    }
-   
+    margin: 0;
+    height: 75%;
+    width: 90%;
+  }
 
+  /*-----Footer MediaQ-------*/
+  footer a {
+    font-size: 1.2em;
+    margin: 0.5em 0.5em;
+    padding: 0.5em;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
 
-   /*---------About Styling media Q---------*/
+  /*---------About Styling media Q---------*/
 
-   .titles1::after{
-        content: "";
-        height: 3px; 
-        width: 90%; 
-        bottom: 45%; 
-        right: 0;
-        left: 0;
-        border-radius: 33%;
-        position: absolute;
-        background-color: var(--secondary-color);
-        margin: 1.5em auto;
-    }
+  .titles1::after {
+    content: "";
+    height: 3px;
+    width: 90%;
+    bottom: 45%;
+    right: 0;
+    left: 0;
+    border-radius: 33%;
+    position: absolute;
+    background-color: var(--secondary-color);
+    margin: 1.5em auto;
+  }
 
-    .skills .flex{
-        width: fit-content;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
-    }
+  .skills .flex {
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
 
-    .skills .flex .card{
-        margin: .5em;
-    }
+  .skills .flex .card {
+    margin: 0.5em;
+  }
 
+  .about-me-text p {
+    line-height: 1.2em;
+    padding: 1em 0;
+  }
 
-    .about-me-text p{
-        line-height: 1.2em;
-        padding: 1em 0;
-    }
+  .about-me img {
+    width: 90%;
+  }
 
-    .about-me img{
-        width: 90%;
-    }
-    
-    .about-me-text{
-        width: 85%;
-    }
-   
+  .about-me-text {
+    width: 85%;
+  }
 }
 
+@media (max-width: 396px) {
+  .titles1::after {
+    content: "";
+    height: 3px;
+    width: 90%;
+    bottom: 55%;
+    right: 0;
+    left: 0;
+    border-radius: 33%;
+    position: absolute;
+    background-color: var(--secondary-color);
+    margin: 1.8em auto;
+  }
 
-@media  (max-width: 396px){
+  nav ul {
+    margin: 0.5em 0;
+    padding-right: 0;
+  }
 
-   .titles1::after{
-        content: "";
-        height: 3px; 
-        width: 90%; 
-        bottom: 55%; 
-        right: 0;
-        left: 0;
-        border-radius: 33%;
-        position: absolute;
-        background-color: var(--secondary-color);
-        margin: 1.8em auto;
-    }
+  .nav-bar .container {
+    margin: 0;
+    padding: 0.3em 0;
+  }
 
-    nav ul{
-                margin: .5em 0;
-                padding-right: 0;
-    }
-
-    .nav-bar .container{
-                margin: 0;
-                padding: 0.3em 0;
-    }
-   
-    
-    nav ul li a{
-        font-size: 0.7em;
-        padding: .3em;
-        margin: 0.1em; 
-    }
-
+  nav ul li a {
+    font-size: 0.7em;
+    padding: 0.3em;
+    margin: 0.1em;
+  }
 }
