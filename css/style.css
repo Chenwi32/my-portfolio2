@@ -361,12 +361,17 @@ footer .container {
   width: 100%;
 }
 
+.footer__main {
+  width: 100%;
+  justify-content: space-between;
+}
+
 footer a {
   text-decoration: none;
   font-size: 0.5em;
   transition: 0.5s;
-  padding: 0.2em 0.2em 0;
-  margin: 0 0.2em;
+  padding-right: 0.2em;
+  margin-right: 0.2em;
   color: rgb(216, 209, 209);
 }
 
@@ -376,11 +381,8 @@ footer a:hover {
 }
 
 .contact {
-  display: flex;
-
+  margin-top: 5rem;
   margin-bottom: 0;
-  text-align: right;
-  align-items: flex-end;
 }
 
 footer h2 {
